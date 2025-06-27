@@ -1,392 +1,1095 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rapids Organic Plus</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>HTML + CSS</title>
-    <link rel="stylesheet" href="styles.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
-  </head>
-  <body>
-    <html>
-      <head>
-        <link
-          href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-          rel="stylesheet"
-          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-          crossorigin="anonymous"
-        />
-        <script
-          src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-          crossorigin="anonymous"
-        ></script>
-      </head>
-      <style>
-        #p1 {
-          background-image: url(https://www.integrativehealingdoc.com/wp-content/uploads/2021/06/marijuana-buds-with-marijuana-joints-cannabis-oil-scaled.jpg);
-          background-size: cover;
-          background-repeat: no-repeat;
-          text-align: center;
-          height: 60%;
-          color: white;
-          padding: 10%;
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        #p2 {
-          background-color: black;
-          color: white;
-          text-align: center; 
-          padding: 10%;
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
         }
-        #p3 {
-          background-color: rgb(240, 178, 122 );
-          color: white;
-          text-align: center;
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(8px);
+            z-index: 50;
+            border-bottom: 1px solid #e2e8f0;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
         }
-        #p4 {
-          background-color: black;
-          color: orange;
-          text-align: center;
+
+        .navbar-container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 64px;
         }
-        #p5{
-          background-color: rgb(240, 178, 122 );
+
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
         }
-        #p6{
-          text-align: center;
-          background-color: rgb(209, 242, 235);
+
+        .navbar-brand img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
         }
-        #p7{
-          background-color: rgb(209, 242, 235);
+
+        .navbar-brand span {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: #1e293b;
         }
-        #p8{
-          background-color: rgb(252, 243, 207);
-          text-align: center;
-          padding: 15px;
+
+        .navbar-nav {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
         }
-      </style>
-      <body>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
-            <img src="https://lh3.googleusercontent.com/a-/ALV-UjXxYQ_9LpbdP6Ftc_eBw-ZCC9C1wJV-o8sVh5YaKNT5wEzkCOA=w90-h90-p-rp-mo-br100" width="50px">
-            <a class="navbar-brand" href="#p1">Rapids Organic Plus</a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#p1"
-                    >Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#p2">About Us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#p3">Features</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#p6">TH-C</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#p8">Water Bongs/Glass</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#p4">Contact Info</a>
-                </li>
-              </ul>
+
+        .navbar-nav a {
+            text-decoration: none;
+            color: #64748b;
+            font-weight: 500;
+            transition: color 0.3s;
+            cursor: pointer;
+        }
+
+        .navbar-nav a:hover,
+        .navbar-nav a.active {
+            color: #059669;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        .mobile-nav {
+            display: none;
+            background: white;
+            border-top: 1px solid #e2e8f0;
+            padding: 1rem;
+        }
+
+        .mobile-nav a {
+            display: block;
+            padding: 0.75rem;
+            text-decoration: none;
+            color: #64748b;
+            border-radius: 6px;
+            transition: all 0.3s;
+        }
+
+        .mobile-nav a:hover {
+            background: #f8fafc;
+            color: #059669;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('https://www.integrativehealingdoc.com/wp-content/uploads/2021/06/marijuana-buds-with-marijuana-joints-cannabis-oil-scaled.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            color: white;
+            padding: 0 1rem;
+            max-width: 1024px;
+            margin: 0 auto;
+        }
+
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #059669;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            transition: background 0.3s;
+        }
+
+        .badge:hover {
+            background: #047857;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.5rem, 8vw, 4.5rem);
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            line-height: 1.1;
+        }
+
+        .hero .highlight {
+            color: #34d399;
+        }
+
+        .hero p {
+            font-size: clamp(1.125rem, 4vw, 1.5rem);
+            margin-bottom: 2rem;
+            color: #cbd5e1;
+            max-width: 768px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 32px;
+            background: #059669;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            font-size: 1.125rem;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background: #047857;
+            transform: translateY(-2px);
+        }
+
+        /* Sections */
+        .section {
+            padding: 5rem 0;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-badge {
+            display: inline-block;
+            background: #fed7aa;
+            color: #9a3412;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 0.875rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        .section-badge.thc {
+            background: #dcfce7;
+            color: #166534;
+        }
+
+        .section-badge.glass {
+            background: #dbeafe;
+            color: #1e40af;
+        }
+
+        .section h2 {
+            font-size: clamp(2rem, 6vw, 3rem);
+            font-weight: bold;
+            color: #1e293b;
+            margin-bottom: 1rem;
+        }
+
+        .section p {
+            font-size: 1.25rem;
+            color: #64748b;
+            max-width: 768px;
+            margin: 0 auto;
+        }
+
+        /* Product Grid */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .product-grid.four-cols {
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        }
+
+        .product-grid.three-cols {
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s;
+            group:hover;
+        }
+
+        .product-card:hover {
+            box-shadow: 0 20px 25px rgba(0, 0, 0, 0.15);
+            transform: translateY(-4px);
+        }
+
+        .product-image {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-image img {
+            width: 100%;
+            height: 256px;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+
+        .product-card:hover .product-image img {
+            transform: scale(1.1);
+        }
+
+        .product-content {
+            padding: 1.5rem;
+        }
+
+        .product-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: #1e293b;
+            margin-bottom: 0.5rem;
+        }
+
+        .stars {
+            display: flex;
+            align-items: center;
+            gap: 4px;
+            margin-bottom: 1rem;
+        }
+
+        .star {
+            width: 16px;
+            height: 16px;
+            fill: #fbbf24;
+            color: #fbbf24;
+        }
+
+        .rating {
+            font-size: 0.875rem;
+            color: #64748b;
+            margin-left: 8px;
+        }
+
+        .product-btn {
+            width: 100%;
+            padding: 12px;
+            background: #059669;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        .product-btn:hover {
+            background: #047857;
+        }
+
+        .product-btn.blue {
+            background: #2563eb;
+        }
+
+        .product-btn.blue:hover {
+            background: #1d4ed8;
+        }
+
+        /* Background Colors */
+        .bg-white {
+            background: white;
+        }
+
+        .bg-emerald {
+            background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
+        }
+
+        .bg-dark {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            color: white;
+        }
+
+        .bg-emerald-solid {
+            background: #059669;
+            color: white;
+        }
+
+        /* About Section */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .about-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .feature-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .feature-dot {
+            width: 8px;
+            height: 8px;
+            background: #34d399;
+            border-radius: 50%;
+        }
+
+        .about-image {
+            aspect-ratio: 1;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 20px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Contact Section */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+
+        .contact-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 2rem;
+            border-radius: 12px;
+        }
+
+        .contact-icon {
+            width: 20%;
+            height: 20%;
+            margin: 0 auto 2rem;
+            font-size: 60px;
+            color: #a7f3d0;
+        }
+
+        .contact-card h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-card p {
+            color: #a7f3d0;
+            word-break: break-all;
+        }
+
+        /* Footer */
+        .footer {
+            background: #0f172a;
+            color: #94a3b8;
+            padding: 3rem 0;
+            text-align: center;
+        }
+
+        .footer-brand {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            margin-bottom: 1rem;
+        }
+
+        .footer-brand img {
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+        }
+
+        .footer-brand span {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .navbar-nav {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .about-features {
+                grid-template-columns: 1fr;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .section {
+                padding: 3rem 0;
+            }
+
+            .product-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Utilities */
+        .text-center {
+            text-align: center;
+        }
+
+        .mb-4 {
+            margin-bottom: 1rem;
+        }
+
+        .mb-8 {
+            margin-bottom: 2rem;
+        }
+
+        .mt-3 {
+            margin-top: 0.75rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <img src="https://lh3.googleusercontent.com/a-/ALV-UjXxYQ_9LpbdP6Ftc_eBw-ZCC9C1wJV-o8sVh5YaKNT5wEzkCOA=w90-h90-p-rp-mo-br100" alt="Rapids Organic Plus Logo">
+                <span>Rapids Organic Plus</span>
             </div>
-          </div>
-        </nav>
-        <div id="p1">
-          <br /><br /><br />
-          <h2>Welcome to</h2>
-          <h1>Rapids Organic Plus</h1>
+
+            <ul class="navbar-nav">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li><a href="#featured" class="nav-link">Vapes</a></li>
+                <li><a href="#thc" class="nav-link">THC Products</a></li>
+                <li><a href="#glass" class="nav-link">Glass & Bongs</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <button class="mobile-menu-btn" onclick="toggleMobileMenu()">☰</button>
         </div>
-        <div id="p3">
-          <h1>Our Featured Categories Products</h1>
-          <div class="row row-cols-1 row-cols-md-6 g-7">
-            <div class="col">
-              <div class="card" style="width: 200px">
-                <img
-                  src="https://www.redstarvapor.com/wp-content/uploads/2023/12/Raz-TN9000.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
+
+        <div class="mobile-nav" id="mobileNav">
+            <a href="#home" onclick="toggleMobileMenu()">Home</a>
+            <a href="#about" onclick="toggleMobileMenu()">About Us</a>
+            <a href="#featured" onclick="toggleMobileMenu()">Vapes</a>
+            <a href="#thc" onclick="toggleMobileMenu()">THC Products</a>
+            <a href="#glass" onclick="toggleMobileMenu()">Glass & Bongs</a>
+            <a href="#contact" onclick="toggleMobileMenu()">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="badge">
+                🌿 Premium Quality Products
+            </div>
+            <h1>
+                Welcome to<br>
+                <span class="highlight">Rapids Organic Plus</span>
+            </h1>
+            <p>Your premier destination for premium vapes, THC products, and smoking accessories</p>
+            <a href="#featured" class="btn">
+                🛒 Shop Now
+            </a>
+        </div>
+    </section>
+
+    <!-- Featured Vapes Section -->
+    <section id="featured" class="section bg-white">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Featured Products</span>
+                <h2>Premium Vape Collection</h2>
+                <p>Discover our curated selection of top-quality vaporizers and disposables</p>
+            </div>
+
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://ecigator.com/wp-content/uploads/2024/04/1713877450-RAZ-TN9000-vs-Geek-Bar-Pulse-1030x589.jpg.webp" alt="Raz TN9000">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Raz TN9000</h3>
+                        <div class="stars">
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="rating">(4.8)</span>
+                        </div>
+                        <button class="product-btn">View Details</button>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card" style="width: 200px">
-                <img
-                  src="http://cdn.shopify.com/s/files/1/0261/5817/0165/products/BREEZEPRO10PACK_19643c56-e9fe-455a-bcee-af848693c16c.jpg?v=1659052469"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://zuluvape.com/cdn/shop/files/Geek_Bar_Pulse_Zero_Disposable_Vape_Box_of_5.png?v=1749663453" alt="Breeze Pro">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Breeze Pro</h3>
+                        <div class="stars">
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="rating">(4.8)</span>
+                        </div>
+                        <button class="product-btn">View Details</button>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card" style="width: 200px">
-                <img
-                  src="https://puffholic.com/wp-content/uploads/2024/10/Geek-bar-pulse-x.png"
-                  class="card-img-top ;"
-                  alt="..."
-                />
-                <div class="card-body">
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://westcoastvapesupply.com/cdn/shop/files/geek-bar-pulse-x-jam-edition-25_000-puffs-blueberry-jam_jpg.webp?v=1744218533" alt="Geek Bar Pulse X">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Geek Bar Pulse X</h3>
+                        <div class="stars">
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="rating">(4.8)</span>
+                        </div>
+                        <button class="product-btn">View Details</button>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card" style="width: 200px">
-                <img
-                  src="https://northvape.com/wp-content/uploads/2024/11/North-Stellar-Grape-Lemon.jpg"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://www.onlinevapeshop.us/cdn/shop/files/Frozen-White-Grape-Geek-Bar-Pulse-15000-800x800-PNG.png?v=1719345591" alt="North Stellar">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">North Stellar</h3>
+                        <div class="stars">
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="rating">(4.8)</span>
+                        </div>
+                        <button class="product-btn">View Details</button>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card" style="width: 200px">
-                <img
-                  src="https://cdn.shopify.com/s/files/1/0701/7211/5175/files/banner-new.webp?v=1730085409"
-                  class="card-img-top"
-                  alt="..."
-                />
-                <div class="card-body">
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://westcoastvapesupply.com/cdn/shop/files/geek-bar-pulse-x-jam-edition-25_000-puffs-strawberry-jam.jpg?v=1744218533" alt="Premium Vape">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Premium Vape</h3>
+                        <div class="stars">
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="rating">(4.8)</span>
+                        </div>
+                        <button class="product-btn">View Details</button>
+                    </div>
                 </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card" style="width: 200px">
-                <img
-                  src="http://www.smokersworldhw.com/cdn/shop/articles/north.jpg?crop=center&height=1200&v=1706538266&width=1200"
-                  class="card-img-top ;"
-                  alt="..."
-                />
-                <div class="card-body">
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://relevantvapes.com/cdn/shop/files/Lemon_Heads.webp?v=1720725137&width=2048" alt="North Collection">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">North Collection</h3>
+                        <div class="stars">
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="rating">(4.8)</span>
+                        </div>
+                        <button class="product-btn">View Details</button>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div id="p5">
-        <div class="row row-cols-1 row-cols-md-6 g-7">
-          <div class="col">
-            <div class="card" style="width: 200px">
-              <img
-                src="https://b2g2c9z4.rocketcdn.me/wp-content/uploads/2022/12/URB-Delta-9-THC-O-3G-Disposable-Mango-Kush-1024x1024.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-              </div>
+    </section>
+
+    <!-- THC Products Section -->
+    <section id="thc" class="section bg-emerald">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge thc">THC Collection</span>
+                <h2>THC, CBD & Delta Products</h2>
+                <p>Premium cannabis products for your wellness and recreation needs</p>
             </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 200px">
-              <img
-                src="http://www.vapecabin.com/cdn/shop/products/5242023_MODUS_VVS_BLEND_3000MG_1__48288_grande.jpg?v=1710024948"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-              </div>
+
+            <!-- THC Disposables -->
+            <div class="mb-8">
+                <h3 class="text-center mb-8" style="font-size: 1.5rem; font-weight: bold; color: #1e293b;">THC Disposables</h3>
+                <div class="product-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://cannabuddy.com/wp-content/uploads/2022/02/Urb-Delta-9-THC-Gummies-Sour-Blueberry-350-mg-Total-Delta-9-THC-combo-1.png" alt="URB Delta 9 - Mango Kush">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">URB Delta 9 - Mango Kush</h3>
+                            <div class="stars">
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="rating">(4.9)</span>
+                            </div>
+                            <button class="product-btn">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://cen.acs.org/content/dam/cen/99/31/WEB/09931-cover-opener.jpg" alt="Modus VVS Blend">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Modus VVS Blend</h3>
+                            <div class="stars">
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="rating">(4.9)</span>
+                            </div>
+                            <button class="product-btn">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://www.3chi.com/wp-content/uploads/2020/04/3Chi_D8_Gummy_Group_633x800.webp" alt="Pulse THCa Diamonds">
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Pulse THCa Diamonds</h3>
+                            <div class="stars">
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="star">⭐</span>
+                                <span class="rating">(4.9)</span>
+                            </div>
+                            <button class="product-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 200px">
-              <img
-                src="https://d2p2lri02rh20e.cloudfront.net/product-images/rc-upload-1696618891365-2--modus_upper_cut_blend_3_0_delta_disposable_vape_lr_d8_thc_h_thc_jd_cdt_3000mg_ct_5ct_bx.png"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-              </div>
+
+            <!-- Cannabis Flower -->
+            <div class="mb-8">
+                <h3 class="text-center mb-8" style="font-size: 1.5rem; font-weight: bold; color: #1e293b;">Premium Cannabis Flower</h3>
+                <div class="product-grid four-cols">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://cannabuddy.com/wp-content/uploads/2022/02/Urb-Delta-9-THC-Gummies-Sour-Blueberry-350-mg-Total-Delta-9-THC-combo-1.png" alt="Laughing Buddha" style="height: 192px;">
+                        </div>
+                        <div class="product-content" style="padding: 1rem;">
+                            <h3 class="product-title">Laughing Buddha</h3>
+                            <button class="product-btn">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://www.3chi.com/wp-content/uploads/2020/04/3Chi_D8_Gummy_Group_633x800.webp" alt="Runtz" style="height: 192px;">
+                        </div>
+                        <div class="product-content" style="padding: 1rem;">
+                            <h3 class="product-title">Runtz</h3>
+                            <button class="product-btn">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://cen.acs.org/content/dam/cen/99/31/WEB/09931-cover-opener.jpg" alt="Alaskan Thunder" style="height: 192px;">
+                        </div>
+                        <div class="product-content" style="padding: 1rem;">
+                            <h3 class="product-title">Alaskan Thunder</h3>
+                            <button class="product-btn">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://cannabuddy.com/wp-content/smush-webp/2022/02/Urb-Delta-9-THC-Gummies-Sour-Blueberry-350-mg-Total-Delta-9-THC-combo-1-500x500.png.webp" alt="Guava" style="height: 192px;">
+                        </div>
+                        <div class="product-content" style="padding: 1rem;">
+                            <h3 class="product-title">Guava</h3>
+                            <button class="product-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 200px">
-              <img
-                src="https://www.elevatewholesale.com/wp-content/uploads/2023/04/3202023_ELFTHC_5000MG_THC_DISPO_1__24592.jpg"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-              </div>
+
+            <!-- Gummies & Edibles -->
+            <div>
+                <h3 class="text-center mb-8" style="font-size: 1.5rem; font-weight: bold; color: #1e293b;">Gummies & Edibles</h3>
+                <div class="product-grid four-cols">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://www.3chi.com/wp-content/uploads/2020/04/3Chi_D8_Gummy_Group_633x800.webp" alt="Modus Blend Gummies" style="height: 192px;">
+                        </div>
+                        <div class="product-content" style="padding: 1rem;">
+                            <h3 class="product-title">Modus Blend Gummies</h3>
+                            <button class="product-btn">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://cannabuddy.com/wp-content/uploads/2022/02/Urb-Delta-9-THC-Gummies-Sour-Blueberry-350-mg-Total-Delta-9-THC-combo-1.png" alt="URB Green Apple" style="height: 192px;">
+                        </div>
+                        <div class="product-content" style="padding: 1rem;">
+                            <h3 class="product-title">URB Green Apple</h3>
+                            <button class="product-btn">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://s.yimg.com/ny/api/res/1.2/StJzPYOFAnf0aXvoVP6Vpg--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTQ4MA--/https://media.zenfs.com/en/globenewswire.com/81d519c88c4cbe3bcfaefeb70596d9f4" alt="Torch Hulk Gummies" style="height: 192px;">
+                        </div>
+                        <div class="product-content" style="padding: 1rem;">
+                            <h3 class="product-title">Torch Hulk Gummies</h3>
+                            <button class="product-btn">View Details</button>
+                        </div>
+                    </div>
+
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://cannabuddy.com/wp-content/smush-webp/2022/02/Urb-Delta-9-THC-Gummies-Sour-Blueberry-350-mg-Total-Delta-9-THC-combo-1-500x500.png.webp" alt="Mushroom Gummies" style="height: 192px;">
+                        </div>
+                        <div class="product-content" style="padding: 1rem;">
+                            <h3 class="product-title">Mushroom Gummies</h3>
+                            <button class="product-btn">View Details</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          
-          <div class="col">
-            <div class="card" style="width: 200px">
-              <img
-                src="https://tenvape.com/cdn/shop/files/Pulse-THCa-Liquid-Diamonds-5g-Disposable-Mango-Martini-Haze-Sativa.webp?v=1719277355&width=1445"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-              </div>
-            </div>
-          </div>
-          <div class="col">
-            <div class="card" style="width: 200px">
-              <img
-                src="https://lost-thc.com/cdn/shop/files/DOPPIO_SATIVA_3611bd47-c028-4ddf-8787-2ce6c0446b29.png?v=1713894672&width=1445"
-                class="card-img-top"
-                alt="..."
-              />
-              <div class="card-body">
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-      <div id="p6">
-        <h3>TH-C, CBD, DELTA Products</h3>
-        <div class="row row-cols-1 row-cols-md-5 g-6">
-          <div class="col">
-            <div class="card h-100" style="width: 200px;">
-              <img src="https://shopnirvanaorganics.com/wp-content/uploads/2024/12/laughing-buddha-1-1024x1024.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-              </div>
+    </section>
+
+    <!-- Glass & Bongs Section -->
+    <section id="glass" class="section bg-white">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge glass">Glass Collection</span>
+                <h2>Water Bongs, Hookahs & Glass Pipes</h2>
+                <p>Artisan glassware for the ultimate smoking experience</p>
             </div>
-          </div>
-          <div class="col">
-            <div class="card h-100" style="width: 200px;">
-              <img src="https://shopnirvanaorganics.com/wp-content/uploads/2024/12/runtz-1-1024x1024.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-              </div>
+
+            <div class="product-grid three-cols">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://420packaging.com/cdn/shop/products/66602-SMK_1-916049.jpg?v=1680950539" alt="Cyclone Glass Recycler" style="height: 320px;">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title" style="font-size: 1.25rem;">Cyclone Glass Recycler</h3>
+                        <div class="stars">
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="rating">(4.7)</span>
+                        </div>
+                        <button class="product-btn blue">View Collection</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://www.grasscity.com/media/catalog/product/cache/0228cebcdf7babda60a4a0b6e14ec2a9/h/i/high-society-high-society-pegasi-premium-wig-wag-hybrid-water-pipe-bong-30296408752202.jpg" alt="Premium Water Bong" style="height: 320px;">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title" style="font-size: 1.25rem;">Premium Water Bong</h3>
+                        <div class="stars">
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="rating">(4.7)</span>
+                        </div>
+                        <button class="product-btn blue">View Collection</button>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="https://www.710pipes.com/wp-content/uploads/2024/06/IMG_20240605_131453__01-scaled.jpg" alt="Unique Glass Pipes" style="height: 320px;">
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title" style="font-size: 1.25rem;">Unique Glass Pipes</h3>
+                        <div class="stars">
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="rating">(4.7)</span>
+                        </div>
+                        <button class="product-btn blue">View Collection</button>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col">
-            <div class="card h-100" style="width: 200px;">
-              <img src="https://shopnirvanaorganics.com/wp-content/uploads/2024/12/asaskan-thunder-fuck-1024x1024.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-              </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="section bg-dark">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge" style="background: rgba(255, 255, 255, 0.2); color: white;">About Us</span>
+                <h2 style="color: white;">Your Trusted Cannabis Partner</h2>
             </div>
-          </div>
-          <div class="col">
-            <div class="card h-100" style="width: 200px;">
-              <img src="https://shopnirvanaorganics.com/wp-content/uploads/2024/12/guava-1-1024x1024.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-              </div>
+
+            <div class="about-grid">
+                <div>
+                    <h3 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1.5rem;">Welcome to Rapids Organic Plus</h3>
+                    <p style="font-size: 1.125rem; color: #cbd5e1; margin-bottom: 1.5rem; line-height: 1.6;">
+                        Your one-stop destination for premium vaporizers, THC & CBD products, and accessories.
+                        We are committed to providing high-quality products that cater to both beginners and seasoned enthusiasts.
+                    </p>
+                    <p style="font-size: 1.125rem; color: #cbd5e1; margin-bottom: 2rem; line-height: 1.6;">
+                        At Rapids Organic Plus, we offer more than just vapes—we specialize in THC and CBD vaporizers,
+                        high-quality flower strains, and infused beverages. Whether you're looking for smooth CBD relaxation,
+                        the potency of THC, or refreshing cannabis-infused drinks, we have something to elevate your experience.
+                    </p>
+
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span>Premium Vaporizers</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span>THC & CBD Flowers</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span>Infused Beverages</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-dot"></div>
+                            <span>Quality Accessories</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-image">
+                    <img src="https://www.michiganmedicine.org/sites/default/files/styles/article_main_image/public/2023-12/cbd-flower-green-cannabinoid-oil.jpg?h=c74750f6&itok=ISS5W7Id" alt="Cannabis products">
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-      <div id="p7">
-      <div class="row row-cols-1 row-cols-md-4 g-5">
-        <div class="col">
-          <div class="card h-100" style="width: 200px;">
-            <img src="https://cdn11.bigcommerce.com/s-4fu59jxuvp/images/stencil/1920w/products/440/1808/5242023_MODUS_BLEND_3000MG_7__04231.1685033303.jpg?c=1" class="card-img-top" alt="...">
-            <div class="card-body">
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-emerald-solid">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge" style="background: rgba(255, 255, 255, 0.2); color: white;">Contact Us</span>
+                <h2 style="color: white;">Visit Our Store Today</h2>
+                <p style="color: #a7f3d0;">Stop by our location or get in touch for more information about our products</p>
             </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100" style="width: 200px;">
-            <img src="https://cbdpharm.com/wp-content/uploads/Urb-Green-Apple-Delta-10-8-THC-Vegan-Gummies-1750mg.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
+
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3>Location</h3>
+                    <p>3018 Rapids Dr<br>Racine, WI 53404</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">📱</div>
+                    <h3>Phone</h3>
+                    <p>262-504-9152</p>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-icon">📨</div>
+                    <h3>Email</h3>
+                    <p>Rapidsorganicplus2025@gmail.com</p>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card h-100" style="width: 200px;">
-            <img src="https://torchenterprise.us/wp-content/uploads/2024/07/torch-hulk-gummies-15000mg-Sour-Watermelon.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
+
+            <div class="text-center mt-3">
+                <a href="#" class="btn" style="background: transparent; border: 2px solid white; color: white;">
+                    Get Directions
+                </a>
             </div>
-          </div>
         </div>
-        <div class="col">
-          <div class="card h-100" style="width: 200px;">
-            <img src="https://www.cutleaf.com/wp-content/uploads/2019/06/Mushroom-Gummies-SuperBlend-I-1.jpg" class="card-img-top" alt="...">
-            <div class="card-body">
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-brand">
+                <img src="https://lh3.googleusercontent.com/a-/ALV-UjXxYQ_9LpbdP6Ftc_eBw-ZCC9C1wJV-o8sVh5YaKNT5wEzkCOA=w90-h90-p-rp-mo-br100" alt="Rapids Organic Plus Logo">
+                <span>Rapids Organic Plus</span>
             </div>
-          </div>
+            <p class="mb-4">Your premier destination for premium cannabis products and accessories</p>
+            <p style="font-size: 0.875rem; color: #64748b;">© 2025 Rapids Organic Plus. All rights reserved.</p>
         </div>
-      </div>
-    </div>
-  </div>
-  <div id="p8">
-    <h3>Water Bongs, Hookahs, Glass Pipes</h3>
-    <br>
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-      <div class="col">
-        <div class="card h-100" style="width: 200px;">
-          <img src="https://www.dhresource.com/0x0s/f2-albu-g7-M01-E2-49-rBVaSlrPK5OAF2IBABEMhXNxuc0344.jpg/super-cyclone-glass-recycler-dab-rig-purple.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100" style="width: 200px;">
-          <img src="https://cdn.shopify.com/s/files/1/0628/4640/2811/products/P57001-001NQ-201-001.jpg?v=1670424914" class="card-img-top" alt="...">
-          <div class="card-body">
-          </div>
-        </div>
-      </div>
-      <div class="col">
-        <div class="card h-100" style="width: 200px;">
-          <img src="https://terrislittlehaven.com/wp-content/uploads/2019/09/10-Most-Unique-Glass-Pipes-in-the-Weed-Game-Right-Now.jpg" class="card-img-top" alt="...">
-          <div class="card-body">
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-        <div id="p2">
-          <h2>About Us:-</h2>
-          <h6>
-            Welcome to Vape Haven, your one-stop destination for premium
-            vaporizers, THC & CBD products, and accessories. We are committed to
-            providing high-quality products that cater to both beginners and
-            seasoned enthusiasts. At Vape Haven, we offer more than just
-            vapes—we specialize in THC and CBD vaporizers, high-quality flower
-            strains, and infused beverages. Whether you're looking for smooth
-            CBD relaxation, the potency of THC, or refreshing cannabis-infused
-            drinks, we have something to elevate your experience. Our carefully
-            curated selection includes: ✅ Premium Vaporizers – For dry herbs,
-            oils, and concentrates ✅ THC & CBD Flowers – Hand-selected for the
-            best potency and flavor ✅ Infused Drinks – A delicious way to enjoy
-            CBD & THC on the go ✅ Accessories – Coils, chargers, e-liquids, and
-            more With expert guidance and a passion for quality, Vape Haven is
-            dedicated to helping you find the right product for your lifestyle.
-            Visit us today and explore the future of vaping and cannabis
-            wellness!
-          </h6>
-        </div>
-        <div id="p4">
-          <h2>Contact Information:-</h2>
-          <br>
-          <h5>3018 Rapids Dr Racine, WI 53404</h5>
-          <h5>Phone: 262-504-9152</h5>
-          <h5>Email: Rapidsorganicplus2025@gmail.com</h5>
-        </div>
-      </body>
-    </html>
-  </body>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        function toggleMobileMenu() {
+            const mobileNav = document.getElementById('mobileNav');
+            mobileNav.style.display = mobileNav.style.display === 'block' ? 'none' : 'block';
+        }
+
+        // Active navigation highlighting
+        function updateActiveNav() {
+            const sections = ['home', 'about', 'featured', 'thc', 'glass', 'contact'];
+            const scrollY = window.scrollY + 100;
+
+            sections.forEach(section => {
+                const element = document.getElementById(section);
+                const navLink = document.querySelector(`a[href="#${section}"]`);
+
+                if (element && navLink) {
+                    const { offsetTop, offsetHeight } = element;
+                    if (scrollY >= offsetTop && scrollY < offsetTop + offsetHeight) {
+                        // Remove active class from all nav links
+                        document.querySelectorAll('.nav-link').forEach(link => {
+                            link.classList.remove('active');
+                        });
+                        // Add active class to current nav link
+                        navLink.classList.add('active');
+                    }
+                }
+            });
+        }
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Update active nav on scroll
+        window.addEventListener('scroll', updateActiveNav);
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(e) {
+            const mobileNav = document.getElementById('mobileNav');
+            const mobileBtn = document.querySelector('.mobile-menu-btn');
+
+            if (!mobileNav.contains(e.target) && !mobileBtn.contains(e.target)) {
+                mobileNav.style.display = 'none';
+            }
+        });
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', function() {
+            updateActiveNav();
+        });
+    </script>
+</body>
 </html>
